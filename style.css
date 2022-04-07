@@ -1,0 +1,89 @@
+body{
+    background-color: #001219;
+}
+
+#board{
+    display: flex;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color:#005F73;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.cell{
+    width: 32%;
+    height: 32%;
+    background-color: #FCA311;
+    cursor: pointer;
+    font-size: 5rem;
+    border-radius: 10px;
+    
+}
+
+.afterWin{
+    filter: blur(5px);
+    transition: 2s;
+}
+.cross{
+    color:#00FFDD;
+}
+.nought{
+    color: #F90716;
+}
+#gameResult{
+    color: whitesmoke;
+    font-size: 5rem;
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    visibility: hidden;
+    transition: 2s;
+    opacity: 0;
+    
+}
+.buttons{
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #001219;
+    font-size: 2.5rem;
+    margin: 0.5%;
+}
+
+
+
+@media (max-width: 1200px){
+    #board{
+        width: 550px;
+        height: 550px;
+    }
+    #gameResult{
+        font-size: 3.5rem;
+        top: 35%;
+    }
+    .buttons{
+        font-size: 2.0rem;
+        margin: 0.3%;
+    }
+}
+@media (max-width: 800px){
+    #board{
+        width: 300px;
+        height: 300px;
+    }
+    #gameResult{
+        font-size: 2rem;
+        top:25%;
+    }
+    .buttons{
+        font-size: 1rem;
+        margin: 0.2%;
+    }
+}
